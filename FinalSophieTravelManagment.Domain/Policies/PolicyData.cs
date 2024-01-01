@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace FinalSophieTravelManagment.Domain.Policies
 {
-    public record  PolicyData(TravelDays days,Consts.Gender Gender , Temperature Temperature , Destination Destination);
+    public record  PolicyData(TravelDays days,Consts.Gender Gender , ValueObject.Temperature Temperature , Destination Destination);
 }
