@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalSophieTravelManagment.Domain", "FinalSophieTravelManagment.Domain\FinalSophieTravelManagment.Domain.csproj", "{118621E9-69CA-478A-B3E7-4F14F141B553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalSophieTravelManagment.Domain", "FinalSophieTravelManagment.Domain\FinalSophieTravelManagment.Domain.csproj", "{118621E9-69CA-478A-B3E7-4F14F141B553}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{149BE65B-8931-41C4-8E26-D2510FC80912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalSophieTravelManagment.Shared.Abstractions", "FinalSophieTravelManagment.Shared.Abstractions\FinalSophieTravelManagment.Shared.Abstractions.csproj", "{CBDFB9A6-6941-498C-A274-1C102D53BBC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{118621E9-69CA-478A-B3E7-4F14F141B553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{118621E9-69CA-478A-B3E7-4F14F141B553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{118621E9-69CA-478A-B3E7-4F14F141B553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDFB9A6-6941-498C-A274-1C102D53BBC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDFB9A6-6941-498C-A274-1C102D53BBC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDFB9A6-6941-498C-A274-1C102D53BBC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDFB9A6-6941-498C-A274-1C102D53BBC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBDFB9A6-6941-498C-A274-1C102D53BBC5} = {149BE65B-8931-41C4-8E26-D2510FC80912}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7653AF3-8E30-415E-BF9A-D0A8D3314598}
