@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalSophieTravelManagment.Domain.ValueObject
 {
-    internal record Destination(string City, string Country )
+    public  record Destination(string City, string Country )
     {
         public static Destination Create(string value)
         {

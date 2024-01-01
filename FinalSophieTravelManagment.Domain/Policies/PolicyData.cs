@@ -7,10 +7,5 @@ using System.Threading.Tasks;
 
 namespace FinalSophieTravelManagment.Domain.Policies
 {
-    public  interface ITravelerItemsPolicy
-    {
-        bool IsApplicable(PolicyData data);
-        IEnumerable<TravelerItem> GenerateItems(PolicyData data);
-
-    }
+    public record  PolicyData(TravelDays days,Consts.Gender Gender , Temperature Temperature , Destination Destination);
 }
