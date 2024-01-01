@@ -1,7 +1,7 @@
 ﻿using FinalSophieTravelManagment.Shared.Abstractions.Exceptions;
 using System.Runtime.Serialization;
 
-namespace FinalSophieTravelManagment.Domain.ValueObject
+namespace FinalSophieTravelManagment.Domain.Exceptions
 {
     public class TravelerItemNameException : TravelerCheckListException
     {

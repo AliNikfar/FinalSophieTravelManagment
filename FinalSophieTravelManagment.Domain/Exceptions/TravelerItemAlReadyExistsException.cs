@@ -2,7 +2,7 @@
 using FinalSophieTravelManagment.Shared.Abstractions.Exceptions;
 using System.Runtime.Serialization;
 
-namespace FinalSophieTravelManagment.Domain.Entities
+namespace FinalSophieTravelManagment.Domain.Exceptions
 {
     public class TravelerItemAlReadyExistsException : TravelerCheckListException
     {
