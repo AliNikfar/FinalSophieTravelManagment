@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalSophieTravelManagment.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{149BE65B-8931-41C4-8E26-D2510FC80912}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalSophieTravelManagment.Shared.Abstractions", "FinalSophieTravelManagment.Shared.Abstractions\FinalSophieTravelManagment.Shared.Abstractions.csproj", "{CBDFB9A6-6941-498C-A274-1C102D53BBC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalSophieTravelManagment.Shared.Abstractions", "FinalSophieTravelManagment.Shared.Abstractions\FinalSophieTravelManagment.Shared.Abstractions.csproj", "{CBDFB9A6-6941-498C-A274-1C102D53BBC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalSophieTravelManagment.Application", "FinalSophieTravelManagment.Application\FinalSophieTravelManagment.Application.csproj", "{D1B78DC1-8911-4EBB-AC37-1DFBB769C329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{CBDFB9A6-6941-498C-A274-1C102D53BBC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBDFB9A6-6941-498C-A274-1C102D53BBC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBDFB9A6-6941-498C-A274-1C102D53BBC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B78DC1-8911-4EBB-AC37-1DFBB769C329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B78DC1-8911-4EBB-AC37-1DFBB769C329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B78DC1-8911-4EBB-AC37-1DFBB769C329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B78DC1-8911-4EBB-AC37-1DFBB769C329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
