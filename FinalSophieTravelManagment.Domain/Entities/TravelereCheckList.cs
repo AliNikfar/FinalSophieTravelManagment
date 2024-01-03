@@ -1,4 +1,5 @@
-﻿using FinalSophieTravelManagment.Domain.Exceptions;
+﻿using FinalSophieTravelManagment.Domain.Events;
+using FinalSophieTravelManagment.Domain.Exceptions;
 using FinalSophieTravelManagment.Domain.ValueObject;
 using FinalSophieTravelManagment.Shared.Abstractions.Domain;
 using System;
@@ -44,6 +45,7 @@ namespace FinalSophieTravelManagment.Domain.Entities
                     throw new TravelerItemAlReadyExistsException(_name, item.Name);
                 }
             _items.AddLast(item);
+            AddEvent(new TravelerItemAdded(this, item));
         }
 
         public void AddItems(IEnumerable<TravelerItem> items)
@@ -58,7 +60,9 @@ namespace FinalSophieTravelManagment.Domain.Entities
             var item = GetItem(itemName);
             var TravelerItem = item with { IsTaken = true };
             _items.Find(item).Value = TravelerItem;
+            AddEvent(new TravelerItemTaken(this, item));
         }
+
 
         private TravelerItem GetItem(string itemName)
         {
@@ -73,6 +77,7 @@ namespace FinalSophieTravelManagment.Domain.Entities
         {
             var item = GetItem(itemName);
             _items.Remove(item);
+            AddEvent(new TravelerItemRemoved(this, item));
         }
     }
 

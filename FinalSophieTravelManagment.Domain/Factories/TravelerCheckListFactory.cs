@@ -26,8 +26,10 @@ namespace FinalSophieTravelManagment.Domain.Factories
         {
             var data = new PolicyData(days, gender, temperature, destination);
             var applicationPoicies = _policies.Where(p => p.IsApplicable(data));
+
             var items = applicationPoicies.SelectMany(p => p.GenerateItems(data));
             var travelerCheckingList = Create(id, name, destination);
+
             travelerCheckingList.AddItems(items);
             return travelerCheckingList;
         }
