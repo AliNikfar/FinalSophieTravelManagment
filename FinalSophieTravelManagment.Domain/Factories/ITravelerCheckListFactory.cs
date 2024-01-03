@@ -10,8 +10,8 @@ namespace FinalSophieTravelManagment.Domain.Factories
 {
     public interface ITravelerCheckListFactory
     {
-        TravelereCheckList Create(TravelerCheckListId id, TravelerCheckListName name, Destination destination);
-        TravelereCheckList CreateWithDefaultItems(TravelerCheckListId id, TravelerCheckListName name, TravelDays days, Consts.Gender gender,
+        TravelerCheckList Create(TravelerCheckListId id, TravelerCheckListName name, Destination destination);
+        TravelerCheckList CreateWithDefaultItems(TravelerCheckListId id, TravelerCheckListName name, TravelDays days, Consts.Gender gender,
             Temperature temperature, Destination destination);
     }
 }

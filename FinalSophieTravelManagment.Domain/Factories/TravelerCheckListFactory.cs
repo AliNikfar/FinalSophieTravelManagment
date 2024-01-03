@@ -18,10 +18,10 @@ namespace FinalSophieTravelManagment.Domain.Factories
         {
             _policies = policies;
         }
-        public TravelereCheckList Create(TravelerCheckListId id, TravelerCheckListName name, Destination destination)
+        public TravelerCheckList Create(TravelerCheckListId id, TravelerCheckListName name, Destination destination)
             => new(id, name, destination);
 
-        public TravelereCheckList CreateWithDefaultItems(TravelerCheckListId id, TravelerCheckListName name, TravelDays days, Gender gender,
+        public TravelerCheckList CreateWithDefaultItems(TravelerCheckListId id, TravelerCheckListName name, TravelDays days, Gender gender,
             Temperature temperature, Destination destination)
         {
             var data = new PolicyData(days, gender, temperature, destination);

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FinalSophieTravelManagment.Domain.Entities
 {
-    public class TravelereCheckList : AggregateRoot<TravelerCheckListId>
+    public class TravelerCheckList : AggregateRoot<TravelerCheckListId>
     {
         public TravelerCheckListId Id { get; private set; }
         private TravelerCheckListName _name { get; set; }
@@ -18,7 +18,7 @@ namespace FinalSophieTravelManagment.Domain.Entities
 
         private readonly LinkedList<TravelerItem> _items = new();
 
-        internal TravelereCheckList(TravelerCheckListId id,
+        internal TravelerCheckList(TravelerCheckListId id,
             TravelerCheckListName name,
             Destination destination)
         {
@@ -27,13 +27,13 @@ namespace FinalSophieTravelManagment.Domain.Entities
             _destination = destination;
         }
 
-        private TravelereCheckList(TravelerCheckListId id,TravelerCheckListName name,
+        private TravelerCheckList(TravelerCheckListId id,TravelerCheckListName name,
             Destination destination,LinkedList<TravelerItem> items)
             :this(id,name,destination)
         {
             _items = items;
         }
-        public TravelereCheckList()
+        public TravelerCheckList()
         {
 
         }

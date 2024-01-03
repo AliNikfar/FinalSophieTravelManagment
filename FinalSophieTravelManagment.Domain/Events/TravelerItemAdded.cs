@@ -9,5 +9,5 @@ using System.Threading.Tasks;
 
 namespace FinalSophieTravelManagment.Domain.Events
 {
-    public  record TravelerItemAdded(TravelereCheckList TravelereCheckList,TravelerItem TravelerItem ):IDomainEvent;
+    public  record TravelerItemAdded(TravelerCheckList TravelereCheckList,TravelerItem TravelerItem ):IDomainEvent;
 }
