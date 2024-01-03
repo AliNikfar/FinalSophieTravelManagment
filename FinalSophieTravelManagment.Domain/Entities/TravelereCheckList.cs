@@ -1,4 +1,5 @@
-﻿using FinalSophieTravelManagment.Domain.ValueObject;
+﻿using FinalSophieTravelManagment.Domain.Exceptions;
+using FinalSophieTravelManagment.Domain.ValueObject;
 using FinalSophieTravelManagment.Shared.Abstractions.Domain;
 using System;
 using System.Collections.Generic;
